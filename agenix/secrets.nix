@@ -1,19 +1,20 @@
 let
-  main_user = builtins.readFile ../rsa.pub;
+  main_user = builtins.readFile ../keys/users/rsa.pub;
   users = [main_user];
 
-  aka = builtins.readFile ../systems/x86_64-linux/aka/ssh_host_rsa_key.pub;
-  asahi = builtins.readFile ../systems/x86_64-linux/asahi/ssh_host_rsa_key.pub;
-  fiji = builtins.readFile ../systems/x86_64-linux/fiji/ssh_host_rsa_key.pub;
-  haku = builtins.readFile ../systems/x86_64-linux/haku/ssh_host_rsa_key.pub;
-  kita = builtins.readFile ../systems/x86_64-linux/kita/ssh_host_rsa_key.pub;
-  naka = builtins.readFile ../systems/aarch64-linux/naka/ssh_host_rsa_key.pub;
-  nyu = builtins.readFile ../systems/x86_64-linux/nyu/ssh_host_rsa_key.pub;
-  rakku = builtins.readFile ../systems/x86_64-linux/rakku/ssh_host_rsa_key.pub;
-  unzen = builtins.readFile ../systems/x86_64-linux/unzen/ssh_host_rsa_key.pub;
+  aka = builtins.readFile ../keys/hosts/x86_64-linux_aka_ssh_host_rsa_key.pub;
+  asahi = builtins.readFile ../keys/hosts/x86_64-linux_asahi_ssh_host_rsa_key.pub;
+  fiji = builtins.readFile ../keys/hosts/x86_64-linux_fiji_ssh_host_rsa_key.pub;
+  haku = builtins.readFile ../keys/hosts/x86_64-linux_haku_ssh_host_rsa_key.pub;
+  kita = builtins.readFile ../keys/hosts/x86_64-linux_kita_ssh_host_rsa_key.pub;
+  naka = builtins.readFile ../keys/hosts/aarch64-linux_naka_ssh_host_rsa_key.pub;
+  nyu = builtins.readFile ../keys/hosts/x86_64-linux_nyu_ssh_host_rsa_key.pub;
+  rakku = builtins.readFile ../keys/hosts/x86_64-linux_rakku_ssh_host_rsa_key.pub;
+  unzen = builtins.readFile ../keys/hosts/x86_64-linux_unzen_ssh_host_rsa_key.pub;
+  usu = builtins.readFile ../keys/hosts/x86_64-linux_usu_ssh_host_rsa_key.pub;
+  yari = builtins.readFile ../keys/hosts/x86_64-linux_yari_ssh_host_rsa_key.pub;
+  zao = builtins.readFile ../keys/hosts/x86_64-linux_zao_ssh_host_rsa_key.pub;
   # ushiro = builtins.readFile ../systems/aarch64-darwin/ushiro/ssh_host_rsa_key.pub;
-  yari = builtins.readFile ../systems/x86_64-linux/yari/ssh_host_rsa_key.pub;
-  zao = builtins.readFile ../systems/x86_64-linux/zao/ssh_host_rsa_key.pub;
 
   systems = [
     aka
@@ -25,6 +26,7 @@ let
     nyu
     rakku
     unzen
+    usu
     # ushiro
     yari
     zao
@@ -57,6 +59,9 @@ in {
 
   "zao-syncthing-key.age".publicKeys = users ++ [zao];
   "zao-syncthing-cert.age".publicKeys = users ++ [zao];
+
+  "usu-syncthing-key.age".publicKeys = users ++ [usu];
+  "usu-syncthing-cert.age".publicKeys = users ++ [usu];
 
   "unzen-syncthing-key.age".publicKeys = users ++ [unzen];
   "unzen-syncthing-cert.age".publicKeys = users ++ [unzen];
