@@ -60,6 +60,9 @@ in {
   "zao-syncthing-key.age".publicKeys = users ++ [zao];
   "zao-syncthing-cert.age".publicKeys = users ++ [zao];
 
+  "sobo-syncthing-key.age".publicKeys = users ++ [usu];
+  "sobo-syncthing-cert.age".publicKeys = users ++ [usu];
+
   "usu-syncthing-key.age".publicKeys = users ++ [usu];
   "usu-syncthing-cert.age".publicKeys = users ++ [usu];
 
