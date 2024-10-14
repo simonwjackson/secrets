@@ -66,6 +66,12 @@ in {
   "usu-syncthing-key.age".publicKeys = users ++ [usu];
   "usu-syncthing-cert.age".publicKeys = users ++ [usu];
 
+  "bandi-syncthing-key.age".publicKeys = users ++ systems;
+  "bandi-syncthing-cert.age".publicKeys = users ++ systems;
+
+  "haku-syncthing-key.age".publicKeys = users ++ systems;
+  "haku-syncthing-cert.age".publicKeys = users ++ systems;
+
   "unzen-syncthing-key.age".publicKeys = users ++ [unzen];
   "unzen-syncthing-cert.age".publicKeys = users ++ [unzen];
 
