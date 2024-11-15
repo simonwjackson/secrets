@@ -55,7 +55,7 @@ in {
   "atuin_session.age".publicKeys = users ++ systems;
   "game-collection-sync.age".publicKeys = users ++ systems;
 
-  "gluetun_env.age".publicKeys = users ++ systems;
+  "proton-1.age".publicKeys = users ++ systems;
 
   "zao-syncthing-key.age".publicKeys = users ++ [zao];
   "zao-syncthing-cert.age".publicKeys = users ++ [zao];
