@@ -55,6 +55,9 @@ in {
   "atuin_session.age".publicKeys = users ++ systems;
   "game-collection-sync.age".publicKeys = users ++ systems;
 
+  "newsdemon-user.age".publicKeys = users ++ systems;
+  "newsdemon-pass.age".publicKeys = users ++ systems;
+
   "proton-0.age".publicKeys = users ++ systems;
   "proton-1.age".publicKeys = users ++ systems;
 
