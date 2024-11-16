@@ -55,11 +55,26 @@ in {
   "atuin_session.age".publicKeys = users ++ systems;
   "game-collection-sync.age".publicKeys = users ++ systems;
 
+  #########
+  # Usenet
+  #########
+
+  "sabnzbd-api-key.age".publicKeys = users ++ systems;
+  "sabnzbd-nzb-key.age".publicKeys = users ++ systems;
+
   "newsdemon-user.age".publicKeys = users ++ systems;
   "newsdemon-pass.age".publicKeys = users ++ systems;
 
+  #########
+  # VPN
+  #########
+
   "proton-0.age".publicKeys = users ++ systems;
   "proton-1.age".publicKeys = users ++ systems;
+
+  #########
+  # Syncthing
+  #########
 
   "zao-syncthing-key.age".publicKeys = users ++ [zao];
   "zao-syncthing-cert.age".publicKeys = users ++ [zao];
