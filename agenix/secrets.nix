@@ -71,6 +71,7 @@ in {
 
   "proton-0.age".publicKeys = users ++ systems;
   "proton-1.age".publicKeys = users ++ systems;
+  "proton-2.age".publicKeys = users ++ systems;
 
   #########
   # Syncthing
