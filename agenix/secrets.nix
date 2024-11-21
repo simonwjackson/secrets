@@ -113,6 +113,10 @@ in {
 
   "matrix-shared-secret.age".publicKeys = users ++ [yari];
   "ntfy-htpasswd.age".publicKeys = users ++ [yari];
-}
-# bump
 
+  #######
+  # Services
+  #######
+
+  "kavita.age".publicKeys = users ++ systems;
+}
