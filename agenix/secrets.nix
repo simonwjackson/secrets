@@ -47,8 +47,6 @@ in {
   "user-simonwjackson-anthropic.age".publicKeys = users ++ systems;
   "slskd_env.age".publicKeys = users ++ systems;
   "aria2-rpc-secret.age".publicKeys = users ++ systems;
-  "tailscale.age".publicKeys = users ++ systems;
-  "tailscale_env.age".publicKeys = users ++ systems;
   "tandoor_env.age".publicKeys = users ++ systems;
   "paperless_ngx_env.age".publicKeys = users ++ systems;
   "atuin_key.age".publicKeys = users ++ systems;
@@ -68,6 +66,10 @@ in {
   #########
   # VPN
   #########
+
+  "tailscale-ephemeral.age".publicKeys = users ++ systems;
+  "tailscale.age".publicKeys = users ++ systems;
+  "tailscale_env.age".publicKeys = users ++ systems;
 
   "proton-0.age".publicKeys = users ++ systems;
   "proton-1.age".publicKeys = users ++ systems;
