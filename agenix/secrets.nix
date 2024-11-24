@@ -52,6 +52,7 @@ in {
   "atuin_key.age".publicKeys = users ++ systems;
   "atuin_session.age".publicKeys = users ++ systems;
   "game-collection-sync.age".publicKeys = users ++ systems;
+  "searx-env.age".publicKeys = users ++ systems;
 
   #########
   # Usenet
