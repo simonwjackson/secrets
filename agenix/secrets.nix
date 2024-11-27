@@ -75,7 +75,8 @@ in {
   "proton-0-usenet.age".publicKeys = users ++ systems;
   "proton-0-soulseek.age".publicKeys = users ++ systems;
   "proton-0-index.age".publicKeys = users ++ systems;
-  "proton-0.age".publicKeys = users ++ systems;
+  "proton-0-torrents.age".publicKeys = users ++ systems;
+
   "proton-1.age".publicKeys = users ++ systems;
   "proton-2.age".publicKeys = users ++ systems;
 
