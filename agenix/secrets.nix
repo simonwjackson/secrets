@@ -125,4 +125,10 @@ in {
   #######
 
   "kavita.age".publicKeys = users ++ systems;
+
+  ########
+  # Heidi
+  ########
+
+  "heidi-tailscale.age".publicKeys = users ++ systems;
 }
