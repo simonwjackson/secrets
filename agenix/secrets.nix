@@ -6,6 +6,7 @@ let
   asahi = builtins.readFile ../keys/hosts/x86_64-linux_asahi_ssh_host_rsa_key.pub;
   fiji = builtins.readFile ../keys/hosts/x86_64-linux_fiji_ssh_host_rsa_key.pub;
   haku = builtins.readFile ../keys/hosts/x86_64-linux_haku_ssh_host_rsa_key.pub;
+  hira = builtins.readFile ../keys/hosts/x86_64-linux_hira_ssh_host_rsa_key.pub;
   kita = builtins.readFile ../keys/hosts/x86_64-linux_kita_ssh_host_rsa_key.pub;
   naka = builtins.readFile ../keys/hosts/aarch64-linux_naka_ssh_host_rsa_key.pub;
   nyu = builtins.readFile ../keys/hosts/x86_64-linux_nyu_ssh_host_rsa_key.pub;
@@ -14,7 +15,6 @@ let
   usu = builtins.readFile ../keys/hosts/x86_64-linux_usu_ssh_host_rsa_key.pub;
   yari = builtins.readFile ../keys/hosts/x86_64-linux_yari_ssh_host_rsa_key.pub;
   zao = builtins.readFile ../keys/hosts/x86_64-linux_zao_ssh_host_rsa_key.pub;
-  # ushiro = builtins.readFile ../systems/aarch64-darwin/ushiro/ssh_host_rsa_key.pub;
 
   systems = [
     aka
@@ -22,12 +22,12 @@ let
     fiji
     haku
     kita
+    hira
     naka
     nyu
     rakku
     unzen
     usu
-    # ushiro
     yari
     zao
   ];
