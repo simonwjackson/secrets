@@ -131,4 +131,10 @@ in {
   ########
 
   "heidi-tailscale.age".publicKeys = users ++ systems;
+
+  ########
+  # wifi
+  ########
+
+  "wifi-vrackie.age".publicKeys = users ++ systems;
 }
