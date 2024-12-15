@@ -4,7 +4,7 @@ let
 
   aka = builtins.readFile ../keys/hosts/x86_64-linux_aka_ssh_host_rsa_key.pub;
   asahi = builtins.readFile ../keys/hosts/x86_64-linux_asahi_ssh_host_rsa_key.pub;
-  fiji = builtins.readFile ../keys/hosts/x86_64-linux_fiji_ssh_host_rsa_key.pub;
+  fuji = builtins.readFile ../keys/hosts/x86_64-linux_fuji_ssh_host_rsa_key.pub;
   haku = builtins.readFile ../keys/hosts/x86_64-linux_haku_ssh_host_rsa_key.pub;
   hira = builtins.readFile ../keys/hosts/x86_64-linux_hira_ssh_host_rsa_key.pub;
   kita = builtins.readFile ../keys/hosts/x86_64-linux_kita_ssh_host_rsa_key.pub;
@@ -19,7 +19,7 @@ let
   systems = [
     aka
     asahi
-    fiji
+    fuji
     haku
     kita
     hira
@@ -111,8 +111,8 @@ in {
   "aka-syncthing-key.age".publicKeys = users ++ [aka];
   "aka-syncthing-cert.age".publicKeys = users ++ [aka];
 
-  "fiji-syncthing-key.age".publicKeys = users ++ [fiji];
-  "fiji-syncthing-cert.age".publicKeys = users ++ [fiji];
+  "fuji-syncthing-key.age".publicKeys = users ++ [fuji];
+  "fuji-syncthing-cert.age".publicKeys = users ++ [fuji];
 
   "kita-syncthing-key.age".publicKeys = users ++ [kita];
   "kita-syncthing-cert.age".publicKeys = users ++ [kita];
