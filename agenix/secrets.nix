@@ -137,4 +137,10 @@ in {
   ########
 
   "wifi-vrackie.age".publicKeys = users ++ systems;
+
+  ########
+  # bluetooth
+  ########
+
+  "bluetooth-fuji-sony-ote.age".publicKeys = users ++ systems;
 }
