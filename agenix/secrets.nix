@@ -15,8 +15,10 @@ let
   usu = builtins.readFile ../keys/hosts/x86_64-linux_usu_ssh_host_rsa_key.pub;
   yari = builtins.readFile ../keys/hosts/x86_64-linux_yari_ssh_host_rsa_key.pub;
   zao = builtins.readFile ../keys/hosts/x86_64-linux_zao_ssh_host_rsa_key.pub;
+  cho = builtins.readFile ../keys/hosts/x86_64-linux_cho_ssh_host_rsa_key.pub;
 
   systems = [
+    cho
     aka
     asahi
     fuji
